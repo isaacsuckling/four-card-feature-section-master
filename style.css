@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', Arial;
+  padding: 70px;
+}
+
+main {
+  padding-bottom: 100px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  transition: 0.4s;
+}
+
+.header {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: hsl(234, 12%, 34%);
+  transition: 0.4s;
+}
+
+.header h1,
+.header h2 {
+  font-size: 36px;
+}
+
+.header h1 {
+  font-weight: 200;
+}
+
+.header h2 {
+  margin-bottom: 16px;
+  line-height: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 60px auto;
+}
+
+
+.card {
+  height: 300px;
+  min-width: 430px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card h3, 
+.card p {
+  display: block;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card img {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.card p {
+  max-width: 330px;
+}
+
+.supervisor {
+  background: linear-gradient(to bottom, hsl(180, 62%, 55%) 1.5%, white 1.5%, white 95%);
+}
+
+.team-builder {
+  background: linear-gradient(to bottom, hsl(0, 78%, 62%) 1.5%, white 1.5%, white 95%);
+}
+
+.karma {
+  background: linear-gradient(to bottom, hsl(34, 97%, 64%) 1.5%, white 1.5%, white 95%);
+}
+
+.calculator {
+  background: linear-gradient(to bottom, hsl(212, 86%, 64%) 1.5%, white 1.5%, white 95%);
+}
+
+
+
+.card-container-center {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+
+@media (max-width: 1510px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header h1,
+  .header h2 {
+    font-size: 35px;
+  }
+  .header {
+    max-width: 430px;
+  }
+  .header p {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-width: 70%;
+  }
+}
